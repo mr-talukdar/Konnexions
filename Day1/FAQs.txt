@@ -1,0 +1,19 @@
+1.Why Does Kali Linux Only Install as root ?
+
+Most distributions encourage their users to use normal user privileges while running the operating system. This is sound security advice, as this behaviour provides an extra layer of security between the user and OS. This is especially true for multiple user systems, where user privilege separation is required.
+
+By nature, Kali Linux is a security and auditing platform, where many tools need to run with root privileges. Generally, when using Kali Linux, being in a multi-user environment is unlikely and therefore the default Kali user is “root”. Additionally, Kali Linux is not recommended for use by Linux beginners who might be more prone to making destructive mistakes while using the super user.
+
+2.What is the Default Kali root Password ?
+
+Kali Linux allows users to configure a password for the root user during installation. However, the i386 and amd64 live images, along with the ARM images, are configured with the default root password: “toor“, without the quotes.
+
+3.What should my sources.list look like?
+
+Kali rolling users should have these entries in their /etc/apt/sources.list file:
+
+deb http://http.kali.org/kali kali-rolling main non-free contrib
+For a more in-depth description of possible entries in your sources.list, check this post.
+
+
+
